@@ -3,8 +3,6 @@ import UserListPage from "./UserList";
 import { Navigate, Outlet } from "react-router-dom";
 
 const UsersPages = () => {
-  const { user } = useAuth();
-  if (!user) return <Navigate to="/login" />;
   return (
     <div className="row">
       <div className="col">
